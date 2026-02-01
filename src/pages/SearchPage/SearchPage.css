@@ -1,0 +1,138 @@
+.search-page {
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+.search-hero {
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+  padding: 60px 0 40px;
+  margin-bottom: 40px;
+}
+
+.search-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.search-input-container {
+  position: relative;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 16px 50px 16px 20px;
+  background-color: var(--bg-tertiary);
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 1.1rem;
+  transition: var(--transition);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  background-color: var(--bg-secondary);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.search-results-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin-top: 10px;
+}
+
+.search-empty {
+  text-align: center;
+  padding: 100px 20px;
+  color: var(--text-secondary);
+}
+
+.search-empty svg {
+  margin: 0 auto 30px;
+  opacity: 0.3;
+}
+
+.search-empty h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 10px;
+}
+
+.search-empty p {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .search-hero {
+    padding: 40px 0 30px;
+  }
+
+  .search-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .search-input {
+    padding: 14px 45px 14px 16px;
+    font-size: 1rem;
+  }
+
+  .search-results-text {
+    font-size: 0.9rem;
+  }
+
+  .search-empty {
+    padding: 60px 20px;
+  }
+
+  .search-empty svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .search-empty h3 {
+    font-size: 1.5rem;
+  }
+
+  .search-empty p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-title {
+    font-size: 1.5rem;
+  }
+
+  .search-input {
+    font-size: 0.95rem;
+  }
+
+  .search-empty h3 {
+    font-size: 1.3rem;
+  }
+
+  .search-empty p {
+    font-size: 0.9rem;
+  }
+}
